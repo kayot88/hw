@@ -1,0 +1,229 @@
+body {
+  margin: 0; 
+  background: #fff; 
+}
+video { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+/*    min-height: 100vh;*/
+    min-width: 100vh;
+    height: 700px;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+#jupiter { 
+  font-family: 'Ranchers', cursive, arial;
+  font-weight:100; 
+  color: white;
+  padding: 2rem;
+  width: 70%;
+  margin:2rem;
+  font-size: 1.2rem;
+  flex-direction: row;
+  justify-content: center;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+  color: black;
+ }
+ h1:hover {
+  font-size: 4rem;
+  margin-top: 10;
+  letter-spacing: .4rem;
+  color: white;
+ }
+.beet {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+  color: black;
+ }
+a {
+  text-decoration: none;
+}
+/*nav {
+  width: 100vh;
+  height: 100px;
+}*/
+.container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+}
+.container li {
+  display: flex;
+  margin-left: 50px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.container a{
+  color: #fff;
+  font-size: 26px;
+  margin-top: 20px;
+}
+.container a:hover {
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+}
+.adventages_container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 400px;
+  padding-top: 20px;
+  background-color: #fff;
+}
+.adventages {
+  width: 70%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.adventages_item {
+  width: 28%;
+-moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
+}
+.adventages_item:hover {
+  box-sizing: border-box;
+  color: #0f0f90;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+
+
+.dws-wrapper{
+ height: 100%;
+ margin: 0 auto;
+}
+ul.accordion{
+ display: flex;
+ justify-content: center;
+ padding: 0;
+}
+ul.accordion li{
+ margin-top: 70px;
+ width: 100px;
+ overflow: hidden;
+ padding: 1px 1px 0;
+ cursor: pointer;
+ display: block;
+ -webkit-box-shadow: 1px 3px 15px #7e807e;
+ -moz-box-shadow: 1px 3px 15px  #7e807e;
+ box-shadow: 1px 3px 15px  #7e807e;
+ -webkit-transition: all 1.5s;
+ -moz-transition: all 1.5s;
+ -ms-transition: all 1.5s;
+ -o-transition: all 1.5s;
+ transition: all 1.5s;
+}
+
+ul.accordion img{
+ height: 70%;
+}
+
+ul.accordion li:hover{
+ width: 300px;
+ -webkit-box-shadow: 1px 3px 15px #36c5fa;
+ -moz-box-shadow: 1px 3px 15px #36c5fa;
+ box-shadow: 1px 3px 15px #36c5fa;
+ -webkit-transition: all 1s;
+ -moz-transition: all 1s;
+ -ms-transition: all 1s;
+ -o-transition: all 1s;
+ transition: all 1s;
+}
+ul.accordion li:nth-child(4){
+ width: 300px;
+}
+ul.accordion:hover li:nth-child(4){
+ width: 50px;
+}
+ul.accordion li:nth-child(4):hover{
+ width: 300px;
+}
+
+footer {
+  /*box-sizing:   border-box;*/
+  background: url(img/relax.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-color: #000;
+  /*position: relative;*/
+  margin-top: 100px;
+  margin-bottom: 0;
+/*  width: 100%;
+  height: auto;
+  background: #000;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;*/
+}
+
+/*footer>#relax {
+  width: 100vh;
+}*/
+
+@media screen and (max-width: 768px){
+.adventages_item {
+  width: 45%;
+
+}
+ul.accordion{
+-webkit-flex-direction: column;
+-moz-flex-direction: column;
+-ms-flex-direction: column;
+-o-flex-direction: column;
+flex-direction: column;
+
+}
+ul.accordion li{
+  width: 100vh;
+    position: relative;
+}
+footer {
+  /*box-sizng:   border-box;*/
+  /*background: url(img/relax.jpg) no-repeat;*/
+  /*background-size: cover;*/
+  height: 0%;                                  /*ДА ПОШЕЛ ОН)))
+  /*background-color: #000;*/
+  /*position: absolute;*/
+  margin-top 0;
+}
+
+
+@media screen and (max-width: 420px){
+.adventages {
+flex-direction: column;
+}
+.adventages_item {
+  width: 100%;
+}
